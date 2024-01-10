@@ -2,3 +2,24 @@
     padding: 0;
     margin: 0;
 }
+
+.main{
+    background-image: url(Assets/imgs/bg.jpg);
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+}
+
+.main .box{
+    height: 100vh;
+    width: 100%;
+    background: black;
+    opacity: 0.45;
+    position: absolute;
+    top: 0;
+}
+
+nav{
+    /* position: absolute; */
+    background-color: aqua;
+}
