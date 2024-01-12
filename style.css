@@ -355,3 +355,9 @@ nav button,#lang{
     top: 40px;
 
 }
+
+
+/* Section Fourth */
+.sec4 .sec-img .text :nth-child(1){
+    max-width: 2rem;
+}
