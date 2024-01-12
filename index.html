@@ -4,15 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Netflix</title>
+    <link rel="shortcut icon" href="Assets/imgs/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="phone.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="main">
         <nav>
             <span><img width="55" src="Assets/imgs/logo.svg" alt="Netflix"></span>
-            <div>
-                <button>English</button>
-                <button>Sign in</button>
+            <div class="nav_element">
+                <button class="dropbtn"  id="lang" onclick="myDDfunc()">
+                    <img src="Assets/imgs/language_icon.svg" alt="language" style="height: 1rem;">
+                    English
+                    <img src="Assets/imgs/dropdown_arrow.svg" alt="dropdown_arrow" style="height: 1rem;">
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#english">English</a>
+                    <a href="#Hindi">Hindi</a>
+                </div>
+                <button class="redBtn">Sign in</button>
             </div>
         </nav>
         <div class="box"></div>
@@ -22,10 +33,14 @@
             <span>Watch anywhere. Cancel anytime.</span>
             <span>Ready to watch? Enter your email to create or restart your membership.</span>
             <div class="getStarted">
-                    <input type="email" name="" id="emailAddress" placeholder="Email Address">
-                    <button>Get Started</button>
+                    <input type="email" name="" id="emailAddress" required>
+                    <label for="emailAddress" class="placeholder">Email address</label>
+                    <button class="redBtn">Get Started 
+                        <img src="Assets/imgs/arrow.svg" alt="arrow">
+                    </button>
             </div>
         </div>
     </div>
 </body>
 </html>
+
