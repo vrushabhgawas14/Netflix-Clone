@@ -37,15 +37,17 @@ body{
 /* Navbar */
 
 nav{
-    /* position: absolute; */
+    position: relative;
     /* background-color: aqua; */
-    width: 70vw;
+    width: 80vw;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    padding: 10px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    overflow: hidden;
 }
 
 /* Navbar -> Netflix Logo */
@@ -55,6 +57,7 @@ nav img{
     position: relative;
     z-index: 1;
     opacity: 0.8;
+    margin-left: 1.5rem;
 }
 
 /* Navbar -> Language and Sign Up */
@@ -62,27 +65,33 @@ nav img{
 nav button,#lang{
     position: relative;
     z-index: 1;
-    right: 10rem;
+}
+
+.nav_element .signin{
+    margin-left: 1.5rem;
+    min-width: 4vw;
+    margin-right: 1rem;
 }
 
 .nav_element{
     display: flex;
     align-items: center;
-    justify-self: center;
+    justify-content:center;
     position: relative;
 }
 
 .main #lang{
+    overflow: hidden;
     background-color: rgba(53, 52, 52, 0.527);
     color: white;
     height: 2rem;
-    width: 8vw;
+    width: 9rem;
     border: 2px solid rgba(216, 216, 216, 0.3);
     border-radius: 0.2rem;
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     font-weight: 700;
 }
 
@@ -211,6 +220,7 @@ nav button,#lang{
     font-size: 1rem;
     font-weight: 500;
     margin: 5px;
+    overflow: hidden;
 }
 
 .getStarted button{
@@ -497,17 +507,17 @@ footer{
     gap: 2rem;
 }
 
-footer > .nav_element{
+.nav-element-footer{
     margin: 1rem 10rem;
 }
 
-.nav_element button,#lang{
+.nav-element-footer button{
     position: relative;
     z-index: 1;
     right: 10rem;
 }
 
-.nav_element #lang{
+.nav-element-footer #lang{
     background-color: rgba(53, 52, 52, 0.527);
     color: white;
     height: 2rem;
@@ -517,10 +527,11 @@ footer > .nav_element{
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     font-weight: 700;
+    cursor: pointer;
 }
 
-.nav_element #lang:focus{
+.nav-element-footer #lang:focus{
     border: 2px solid rgb(255, 255, 255);
 }
