@@ -144,6 +144,7 @@ nav button,#lang{
     font-family: 'Noto Sans',sans-serif;    
     gap: 20px;
     /* padding: 30px; */
+    text-align: center;
 }
 
 .text1> :first-child{
