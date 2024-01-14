@@ -1,7 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@900&family=Martel+Sans:wght@500;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;900&display=swap');
 
+nav {
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  max-width: 90%;
+}
 
-@media screen and (max-width: 600px) {
-    
-  }
+.main #lang{
+  width: 8rem;
+  justify-content: space-evenly;
+  font-weight: 700;
+}
+
+nav img {
+  width: 80px;
+  margin-left: 0rem;
+  margin-right: 2rem;
+}
+
+.redBtn {
+  width: 17vw;
+}
+
+.nav_element .signin {
+  margin-left: 0.5rem;
+  min-width: 5vw;
+  margin-right: 4rem;
+}
+
+.section{
+  flex-wrap: wrap;
+  height: 80%;
+}
+
+.section .text{
+  max-width: 80%;
+  text-align: center;
+  align-items: center;
+  height: 20vh;
+  margin-top: 2rem;
+}
+
+.section .text> :nth-child(1) {
+  font-weight:900;
+  font-size: 1.5rem;
+}
+
+.section .text> :nth-child(2) {
+  font-size: 1rem;
+}
+
+.faq-box{
+  height: 6vh;
+}
+
+.faq-register span{
+  font-size: 1rem;
+  text-align: center;
+}
+
+.faq-reg-box{
+  height: 5rem;
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.footer{
+  grid-template-columns: 1fr 1fr;
+}
+
+footer{
+  margin: 3rem 3rem;
+}
+
+.nav-element-footer #lang {
+  width: 24vw;
+}
