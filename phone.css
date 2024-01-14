@@ -8,14 +8,31 @@ nav {
   max-width: 90%;
 }
 
+.main{
+  height: 100%;
+}
+
+.main .box{
+  height: 60vh;
+}
+
 .main #lang{
-  width: 8rem;
-  justify-content: space-evenly;
-  font-weight: 700;
+  width: 4rem;
+  position: relative;
+}
+
+.main #lang img{
+  position: absolute;
+}
+.main #lang .img1{
+  left: -2rem;
+}
+.main #lang .img2{
+  left: 0rem;
 }
 
 nav img {
-  width: 80px;
+  width: 95px;
   margin-left: 0rem;
   margin-right: 2rem;
 }
@@ -24,10 +41,87 @@ nav img {
   width: 17vw;
 }
 
-.nav_element .signin {
+.nav_element span{
+  visibility: hidden;
+}
+
+/* .nav_element .signin {
   margin-left: 0.5rem;
   min-width: 5vw;
   margin-right: 4rem;
+} */
+.text1{
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.text1> :first-child{
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.text1> :nth-child(2){
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.text1> :nth-child(3){
+  width: 80vw;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.main .getStarted{
+  /* background-color: red; */
+  height: 6rem;
+  width: 20rem;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  position: relative;
+}
+
+.getStarted #emailAddress{
+  height: 4rem;
+  width: 16rem;
+  margin: 5px;
+}
+
+
+.placeholder{
+  position: absolute;
+  left: 40px;
+  top: 27%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.671);
+}
+
+.getStarted #emailAddress:focus + .placeholder{
+  top: 15%;
+  font-size: 0.5rem;
+  left: 2.5rem;
+}
+
+.getStarted #emailAddress:focus{
+  border: 4px solid rgba(238, 238, 238, 0.7);
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  height: 3.8rem;
+}
+
+.getStarted button{
+  height: 4rem;
+  width: 8rem;    
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.getStarted button img{
+  width: 1rem;
 }
 
 .section{
@@ -52,8 +146,24 @@ nav img {
   font-size: 1rem;
 }
 
+.sec4 .sec-img img{
+  width: 100%;
+}
+
+.section5 h2{
+  font-weight: 700;
+  font-size: 2rem;
+  padding-top:3rem ;
+  padding-bottom: 1.5rem;
+}
+
 .faq-box{
   height: 6vh;
+  font-size: 1rem;
+}
+
+.faq-box img{
+  width: 1.5rem;  
 }
 
 .faq-register span{
@@ -80,4 +190,52 @@ footer{
 
 .nav-element-footer #lang {
   width: 24vw;
+}
+
+.faq-reg-box{
+  /* background-color: red; */
+  height: 6rem;
+  width: 20rem;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  position: relative;
+}
+
+.faq-reg-box #emailAddress{
+  height: 4rem;
+  width: 16rem;
+  margin: 5px;
+}
+
+.faq-reg-box #emailAddress:focus + .placeholder{
+  top: 15%;
+  font-size: 0.5rem;
+  left: 2.5rem;
+}
+
+.faq-reg-box #emailAddress:focus{
+  border: 4px solid rgba(238, 238, 238, 0.7);
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  height: 3.8rem;
+}
+
+.faq-reg-box .placeholder{
+  left: 35px;
+  top: 25%;
+}
+
+
+.faq-reg-box button{
+  height: 4rem;
+  width: 8rem;    
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-reg-box button img{
+  width: 1rem;
 }
