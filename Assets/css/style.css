@@ -13,8 +13,8 @@ body{
 /* Background Image */
 
 .main{
-    /* background-image: url(Assets/imgs/bg.jpg); */
-    background-image: url(Assets/imgs/bg2.jpg);
+    /* background-image: url(../imgs/bg1.jpg); */
+    background-image: url(../imgs/bg2.jpg);
     height: 100vh;
     position: relative;
     background-position: center center; 
